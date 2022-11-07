@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Uni Life</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@1,700&family=Lobster&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!--header-->
+    <header class="headercontainer">
+      <div class="container">
+        <h1>🎓 Your UniLife</h1>
+      </div>
+    </header>
+
+    <!--navigation menu bar-->
+    <div class="topnav">
+      <a class="active" href="C:\Users\user\Documents\아인💜\KPMB SEM 4\OOP\university\src\index.html"style="color:midnightblue;">Home</a>
+      <a href="C:\Users\user\Documents\아인💜\KPMB SEM 4\OOP\university\src\index1.html">Notes</a>
+      <a href="#" class="btn" onclick="self.close();" >Exit</a>
+
+    </div>
+
+    <!--contents-->
+    <div class="container">
+      <img src="img2.jpeg" alt="uni" style="width:100%; height:500px; margin:0px">
+      <div class="centered">"WE STAND FOR AMBITION"</div>
+    </div>
+    <center><h2>About UniLife</h2>
+    <p>The UniLife app gives you random universities around the world to give you ideas to plan your future & life</p></center>
+
+    <center><h2>Top Universities In The World</h2></center>
+    
+    <!--image 1-->
+    <div class="row">
+      <div class="col">
+        <div id="bd2">
+          <div class="container2">
+            <center><img src="https://news.mit.edu/sites/default/files/images/202206/EmilyDahl22-CampusAerial.jpg" alt="uni1" class="image" style="width:300px; height:300px;border-radius: 25px;"></center>
+            <div class="overlay">
+                <div class="text">Massachusetts Institute of Technology (MIT)</div>
+                <br><br><br>
+                <div class="text2">United States</div>
+                <br>                
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--image 2-->
+      <div class="col">
+        <div id="bd2">
+          <div class="container2">
+            <center><img src="https://cdn.britannica.com/85/13085-050-C2E88389/Corpus-Christi-College-University-of-Cambridge-England.jpg" alt="uni2" class="image" style="width:300px; height:300px;border-radius: 25px;"></center>
+            <div class="overlay">
+                <div class="text">University of Cambridge</div>
+                <br><br><br>
+                <div class="text2">United Kingdom</div>
+                <br>                
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--image 3-->
+      <div class="col">
+        <div id="bd2">
+          <div class="container2">
+            <center><img src="https://imageio.forbes.com/specials-images/imageserve/43f135dd92ff5c5d8c4b626d9c12f560/0x0.jpg?format=jpg&height=345&width=700&fit=bounds" alt="uni2" class="image" style="width:300px; height:300px;border-radius: 25px;"></center>
+            <div class="overlay">
+                <div class="text">Stanford University </div>
+                <br><br><br>
+                <div class="text2">United States</div>
+                <br>                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+
+    <center><h2>Enter Your Choice</h2></center>
+
+    <!--user input to search data from apilink-->
+    <center>
+    <div id="bd1">
+      <div class="text3">
+      <form action="/action_page.php">
+        <br>
+        <!--uni_input-->
+        <label for="uni_input" >About:</label>
+        <select name="uni_input" id="uni_input">
+            <option value="universiti">Universiti</option>
+            <option value="university">University</option>
+            <option value="kolej">Kolej</option>
+            <option value="college">College</option>
+            <option value="politeknik">Politeknik</option>
+            <option value="polytechnic">Polytechnic</option>
+        </select>
+        <br><br>
+      </form>
+      
+      <!--unicountry-->
+      <label for="unicountry">Country:</label>
+      <input type="text" id="unicountry" placeholder="Enter country">
+     <br><br> <center><button onclick="buttonClicked()">Enter</button></center>
+    </div>
+    </center>
+
+<!--displaying data from api according to the user input-->
+<center>
+  <h1>----💜----</h1>
+  <h2>Your Uni Result</h2>
+ 
+    <p id="display"></p>
+    <li id="info"></li>
+    <script src="main4.js"></script>
+
+</center>
+
+  <footer class="footercontainer" style="color:midnightblue">
+    <br><p><strong>“The University brings out all abilities, including incapability.” ~ Anton Chekhov</strong></p>
+  </footer>
+
+      
+  </body>
+</html>

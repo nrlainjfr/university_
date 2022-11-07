@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Notes</title>
+    <link rel="stylesheet" href="index1.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
+  </head>
+  <body>
+    <div class="mainWrapper">
+      <!--header-->
+        <header class="headercontainer">
+            <div class="container">
+              <h1>🎓 Your UniNotes</h1>
+            </div>
+        </header>
+
+        <!--navigation menu bar-->
+          <div class="topnav">
+            <a class="active" href="C:\Users\user\Documents\아인💜\KPMB SEM 4\OOP\university\src\index.html">Home</a>
+            <a href="C:\Users\user\Documents\아인💜\KPMB SEM 4\OOP\university\src\index1.html">Notes</a>
+            <a href="#" class="btn1" onclick="self.close();">Exit</a>
+          </div>
+<br>
+<center><h3 style="font-size:25px;color:#000033;"><em>"Custom your notes here ✎"</em></h3></center>
+<center><h4>-Write an apporiate notes for your UniNotes- </h4></center>
+
+       <!--form to enter the text file name-->
+      <form>
+        <div class="form-group">
+          <label style="font-size:25px; font-family:'Lobster', cursive;
+           margin-left:10px;color:midnightblue;">File name</label>
+          <center><input id="fileName" type="text" class="form-control" style="width:1330px;height:30px;margin-left:10px;"></center>
+        </div>
+<br>
+      <!--form to enter the notes-->
+        <div class="form-group">
+          <label style="font-size:25px; font-family:'Lobster', cursive;
+          margin-left:10px;color:midnightblue;">Content</label>
+          <textarea id="fileContents" class="form-control" rows="5" style="width:1330px;height:200px;margin-left:10px;"></textarea>
+
+        </div>
+      </form>
+
+      <!--to display all the button that have been created -->
+      <button id="btnCreate" class="btn btn-default">Create</button> <!--text file will be created if click CREATE-->
+      <button id="btnRead" class="btn btn-default">Read</button> <!--read  text file if click READ-->
+      <button id="btnDelete" class="btn btn-default">Delete</button> <!--text file will be deleted if click DELETE-->
+      <button id="btnUpdate" class="btn btn-default">Update</button> <!--text file will be updated if click UPDATE-->
+
+    
+    </div>
+
+    <!--calling main.js file-->
+    <script src="main.js">
+
+    </script>
+    <footer class="footercontainer" style="color:midnightblue">
+        <br><p><strong>“The University brings out all abilities, including incapability.” ~ Anton Chekhov</strong></p>
+      </footer>
+  </body>
+</html>
